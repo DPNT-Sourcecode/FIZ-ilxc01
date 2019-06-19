@@ -33,7 +33,22 @@ object FizzBuzz {
       numStr
   }
 
-  val fizzBuzz = fizzBuzz2 _
+  def fizzBuzz3(number: Int): String = {
+    def sameChar(remainStr: String): Boolean = {
+      if (remainStr.length == 1) true
+      else if (remainStr.charAt(0) == remainStr.charAt(1)) sameChar(remainStr.substring(1))
+      else false
+    }
+
+    val fb = fizzBuzz2(number)
+
+    if (sameChar(number.toString) && fb == "fizz buzz")
+      "fizz buzz deluxe"
+    else
+      fb
+  }
+
+  val fizzBuzz = fizzBuzz3 _
 
 
 }

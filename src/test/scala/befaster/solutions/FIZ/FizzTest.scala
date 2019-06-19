@@ -46,4 +46,12 @@ class FizzTest  extends FlatSpec with Matchers {
   it should "return fizz buzz (fizzBuzz2 div by 3 and 5 in number)" in {   //number is div by 3, not div by 5 and has a 5 in it
     FizzBuzz.fizzBuzz2(153) shouldBe "fizz buzz"
   }
+
+  it should "return fizz buzz deluxe" in {
+    FizzBuzz.fizzBuzz3(555) shouldBe "fizz buzz deluxe"
+  }
+
+  it should "return fizz buzz (fizzBuzz3)" in {
+    FizzBuzz.fizzBuzz3(153) shouldBe "fizz buzz"
+  }
 }
