@@ -60,12 +60,15 @@ object FizzBuzz {
 
   def fizzBuzz5(number: Int): String = {
 
+    val isDivBy3 = number % 3 == 0
+    val isDivBy5 = number % 5 == 0
+
     val numStr = number.toString
     val hasA3 = numStr.contains('3')
     val hasA5 = numStr.contains('5')
 
     val fb = fizzBuzz2(number)
-    val isDeluxe = fb.contains("fizz") && hasA3 || fb.contains("buzz") && hasA5
+    val isDeluxe = fb.contains("fizz") && hasA3 && isDivBy3 || fb.contains("buzz") && hasA5 && isDivBy5
     val isFake = isDeluxe & number % 2 == 1
 
     if (isFake) s"$fb fake deluxe"
@@ -77,4 +80,5 @@ object FizzBuzz {
 
 
 }
+
 
