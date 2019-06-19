@@ -105,12 +105,20 @@ class FizzTest extends WordSpec with Matchers {
 
   "performing fizzBuzz5" should {
 
+    "return fizz" in {
+      FizzBuzz.fizzBuzz5(13) shouldBe "fizz"
+    }
+
     "return fizz deluxe" in {
       FizzBuzz.fizzBuzz5(36) shouldBe "fizz deluxe"
     }
 
     "return fizz fake deluxe" in {
       FizzBuzz.fizzBuzz5(33) shouldBe "fizz fake deluxe"
+    }
+
+    "return buzz" in {
+      FizzBuzz.fizzBuzz5(52) shouldBe "buzz"
     }
 
     "return buzz deluxe" in {
@@ -131,4 +139,3 @@ class FizzTest extends WordSpec with Matchers {
   }
 
 }
-
