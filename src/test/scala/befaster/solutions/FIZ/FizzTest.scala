@@ -1,5 +1,8 @@
 package befaster.solutions.FIZ
 
-class FizzTest {
+import org.scalatest.{FlatSpec, Matchers}
+
+class FizzTest  extends FlatSpec with Matchers {
 
 }
+
