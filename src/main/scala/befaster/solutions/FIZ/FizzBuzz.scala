@@ -42,10 +42,10 @@ object FizzBuzz {
 
     val fb = fizzBuzz2(number)
     val numStr = number.toString
-    val areCharsTheSame = sameChar(numStr)
+    val areCharsTheSame = sameChar(numStr) && numStr.length > 1
 
-    if (areCharsTheSame && fb == "fizz buzz")
-      "fizz buzz deluxe"
+    if (areCharsTheSame && fb != numStr)
+      s"$fb deluxe"
     else if (areCharsTheSame && fb == numStr)
       "deluxe"
     else
@@ -56,3 +56,4 @@ object FizzBuzz {
 
 
 }
+

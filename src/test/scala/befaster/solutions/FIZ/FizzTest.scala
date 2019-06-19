@@ -3,6 +3,10 @@ package befaster.solutions.FIZ
 import org.scalatest.{FlatSpec, Matchers}
 
 class FizzTest  extends FlatSpec with Matchers {
+  it should "return 7 (fizzBuzz1)" in {
+    FizzBuzz.fizzBuzz1(7) shouldBe "7"
+  }
+
   it should "return fizz (fizzBuzz1)" in {
     FizzBuzz.fizzBuzz1(6) shouldBe "fizz"
   }
@@ -13,6 +17,10 @@ class FizzTest  extends FlatSpec with Matchers {
 
   it should "return fizz buzz (fizzBuzz1)" in {
     FizzBuzz.fizzBuzz1(15) shouldBe "fizz buzz"
+  }
+
+  it should "return 7 (fizzBuzz2)" in {
+    FizzBuzz.fizzBuzz2(7) shouldBe "7"
   }
 
   it should "return fizz (fizzBuzz2 div by 3)" in {
@@ -47,15 +55,25 @@ class FizzTest  extends FlatSpec with Matchers {
     FizzBuzz.fizzBuzz2(153) shouldBe "fizz buzz"
   }
 
+  it should "return 7 (fizzBuzz3)" in {
+    FizzBuzz.fizzBuzz3(7) shouldBe "7"
+  }
+
   it should "return deluxe" in {
     FizzBuzz.fizzBuzz3(11) shouldBe "deluxe"
+  }
+
+  it should "return fizz deluxe" in {
+    FizzBuzz.fizzBuzz3(33) shouldBe "fizz deluxe"
+  }
+
+  it should "return buzz deluxe" in {
+    FizzBuzz.fizzBuzz3(55) shouldBe "buzz deluxe"
   }
 
   it should "return fizz buzz deluxe" in {
     FizzBuzz.fizzBuzz3(555) shouldBe "fizz buzz deluxe"
   }
 
-  it should "return fizz buzz (fizzBuzz3)" in {
-    FizzBuzz.fizzBuzz3(153) shouldBe "fizz buzz"
-  }
 }
+
