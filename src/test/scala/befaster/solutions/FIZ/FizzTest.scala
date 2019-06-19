@@ -59,5 +59,3 @@ class FizzTest  extends FlatSpec with Matchers {
     FizzBuzz.fizzBuzz3(153) shouldBe "fizz buzz"
   }
 }
-
-
