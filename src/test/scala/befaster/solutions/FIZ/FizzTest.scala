@@ -1,10 +1,13 @@
 package befaster.solutions.FIZ
 
-import org.scalatest.{FlatSpec, Matchers}
+import org.scalatest.{Matchers, WordSpec}
 
-class FizzTest  extends FlatSpec with Matchers {
-  it should "return 7 (fizzBuzz1)" in {
-    FizzBuzz.fizzBuzz1(7) shouldBe "7"
+class FizzTest extends WordSpec with Matchers {
+
+  it when "performing fizzBuzz1" should {
+    "return 7 (fizzBuzz1)" in {
+      FizzBuzz.fizzBuzz1(7) shouldBe "7"
+    }
   }
 
   it should "return fizz (fizzBuzz1)" in {
@@ -75,5 +78,22 @@ class FizzTest  extends FlatSpec with Matchers {
     FizzBuzz.fizzBuzz3(555) shouldBe "fizz buzz deluxe"
   }
 
+  it should "return fake deluxe" in {
+    FizzBuzz.fizzBuzz4(11) shouldBe "fake deluxe"
+  }
+
+  it should "return fizz fake deluxe" in {
+    FizzBuzz.fizzBuzz4(33) shouldBe "fizz deluxe"
+  }
+
+  it should "return buzz fake deluxe" in {
+    FizzBuzz.fizzBuzz4(55) shouldBe "buzz deluxe"
+  }
+
+  it should "return fizz buzz fake deluxe" in {
+    FizzBuzz.fizzBuzz4(555) shouldBe "fizz buzz deluxe"
+  }
+
 }
+
 
