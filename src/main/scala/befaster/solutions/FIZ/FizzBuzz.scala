@@ -58,7 +58,23 @@ object FizzBuzz {
     if (isOddNumber) fb.replace("deluxe", "fake deluxe") else fb
   }
 
-  val fizzBuzz = fizzBuzz4 _
+  def fizzBuzz5(number: Int): String = {
+
+    val numStr = number.toString
+    val hasA3 = numStr.contains('3')
+    val hasA5 = numStr.contains('5')
+
+    val fb = fizzBuzz2(number)
+    val isDeluxe = fb.contains("fizz") && hasA3 || fb.contains("buzz") && hasA5
+    val isFake = isDeluxe & number % 2 == 1
+
+    if (isFake) s"$fb fake deluxe"
+    else if (isDeluxe) s"$fb deluxe"
+    else fb
+  }
+
+  val fizzBuzz = fizzBuzz5 _
 
 
 }
+

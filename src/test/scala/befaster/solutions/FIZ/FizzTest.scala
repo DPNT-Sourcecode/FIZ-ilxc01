@@ -103,4 +103,32 @@ class FizzTest extends WordSpec with Matchers {
     }
   }
 
+  "performing fizzBuzz5" should {
+
+    "return fizz deluxe" in {
+      FizzBuzz.fizzBuzz5(36) shouldBe "fizz deluxe"
+    }
+
+    "return fizz fake deluxe" in {
+      FizzBuzz.fizzBuzz5(33) shouldBe "fizz fake deluxe"
+    }
+
+    "return buzz deluxe" in {
+      FizzBuzz.fizzBuzz5(50) shouldBe "buzz deluxe"
+    }
+
+    "return buzz fake deluxe" in {
+      FizzBuzz.fizzBuzz5(55) shouldBe "buzz fake deluxe"
+    }
+
+    "return fizz buzz deluxe" in {
+      FizzBuzz.fizzBuzz5(30) shouldBe "fizz buzz deluxe"
+    }
+
+    "return fizz buzz fake deluxe" in {
+      FizzBuzz.fizzBuzz5(45) shouldBe "fizz buzz fake deluxe"
+    }
+  }
+
 }
+
