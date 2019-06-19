@@ -4,7 +4,7 @@ import org.scalatest.{Matchers, WordSpec}
 
 class FizzTest extends WordSpec with Matchers {
 
-  it when {
+  "FizzTest" when {
     "performing fizzBuzz1" should {
       "return 7" in {
         FizzBuzz.fizzBuzz1(7) shouldBe "7"
@@ -90,27 +90,19 @@ class FizzTest extends WordSpec with Matchers {
       }
 
       "return fizz fake deluxe" in {
-        FizzBuzz.fizzBuzz4(33) shouldBe "fizz deluxe"
+        FizzBuzz.fizzBuzz4(33) shouldBe "fizz fake deluxe"
       }
 
       "return buzz fake deluxe" in {
-        FizzBuzz.fizzBuzz4(55) shouldBe "buzz deluxe"
+        FizzBuzz.fizzBuzz4(55) shouldBe "buzz fake deluxe"
       }
 
       "return fizz buzz fake deluxe" in {
-        FizzBuzz.fizzBuzz4(555) shouldBe "fizz buzz deluxe"
+        FizzBuzz.fizzBuzz4(555) shouldBe "fizz buzz fake deluxe"
       }
     }
   }
 
-
-
-
-
-
-
-
-
-
 }
+
 
