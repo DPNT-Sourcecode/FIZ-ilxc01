@@ -47,6 +47,10 @@ class FizzTest  extends FlatSpec with Matchers {
     FizzBuzz.fizzBuzz2(153) shouldBe "fizz buzz"
   }
 
+  it should "return deluxe" in {
+    FizzBuzz.fizzBuzz3(555) shouldBe "fizz buzz deluxe"
+  }
+
   it should "return fizz buzz deluxe" in {
     FizzBuzz.fizzBuzz3(555) shouldBe "fizz buzz deluxe"
   }
@@ -55,3 +59,4 @@ class FizzTest  extends FlatSpec with Matchers {
     FizzBuzz.fizzBuzz3(153) shouldBe "fizz buzz"
   }
 }
+
