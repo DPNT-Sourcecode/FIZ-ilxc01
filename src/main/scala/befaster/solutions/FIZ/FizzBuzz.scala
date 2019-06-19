@@ -52,7 +52,14 @@ object FizzBuzz {
       fb
   }
 
-  val fizzBuzz = fizzBuzz3 _
+  def fizzBuzz4(number: Int): String = {
+    val isOddNumber = number % 2 == 1
+    val fb = fizzBuzz3(number)
+    if (isOddNumber) fb.replace("deluxe", "fake deluxe") else fb
+  }
+
+  val fizzBuzz = fizzBuzz4 _
 
 
 }
+
