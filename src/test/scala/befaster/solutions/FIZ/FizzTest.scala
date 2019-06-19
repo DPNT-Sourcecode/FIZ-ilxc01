@@ -95,5 +95,3 @@ class FizzTest extends WordSpec with Matchers {
   }
 
 }
-
-
