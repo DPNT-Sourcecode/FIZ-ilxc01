@@ -15,5 +15,3 @@ class FizzTest  extends FlatSpec with Matchers {
     FizzBuzz.fizzBuzz(15) shouldBe "fizz buzz"
   }
 }
-
-

@@ -15,4 +15,3 @@ object FizzBuzz {
       number.toString
   }
 }
-
